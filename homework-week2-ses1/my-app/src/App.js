@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Song from './component/Song';
-import Index from './pages/home/Index'
+import Index from './pages/home/Index';
 
 function App() {
   return (
