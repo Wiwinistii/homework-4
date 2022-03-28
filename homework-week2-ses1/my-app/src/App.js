@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
+//import Song from './component/Song';
 import './App.css';
-import Song from './component/Song';
 import Index from './pages/home/Index';
 
 function App() {

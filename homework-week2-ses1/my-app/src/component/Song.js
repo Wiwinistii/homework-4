@@ -1,12 +1,11 @@
 import './Song.css';
-import data from '../Data.js'
 
 function Song(props)  {
   return (
     <div className="Song">
       <img src={props.url} alt={props.alt}></img>
-      <div className="text-component" >
-        <p>{props.albumName}</p>
+      <div className="text" >
+        <p className="album">{props.albumName}</p>
         <p>{props.artistName}</p>
       </div>
       <div className='button'>

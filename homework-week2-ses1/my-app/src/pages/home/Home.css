@@ -1,8 +1,4 @@
-.Home {
+.data-song {
     text-align: center;
     flex-direction: column;
   }
-
-.search-bar {
-    margin-bottom: 20px;
-}
