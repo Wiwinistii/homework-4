@@ -5,7 +5,7 @@ import data from '../../Data.js'
 function Index()  {
   return (
     <div className="data-song"> 
-    {data.map((data)=> {
+    {data.map((data, indx)=> {
       return (
         <Song
         url={data.album.images[0].url}

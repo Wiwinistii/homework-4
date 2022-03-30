@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 //import Song from './component/Song';
 import './App.css';
-import Index from './pages/home/Index';
+import Index from './pages/spotify/Index';
 
 function App() {
   return (

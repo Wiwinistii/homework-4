@@ -1,0 +1,28 @@
+.title {
+    color: rgb(97, 0, 0);
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .spotify-track {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+
+  button {
+    border-radius: 12px;
+    padding: 12px 12px;
+    background-color: #f05050;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16;
+    color: black;
+  }
+  
