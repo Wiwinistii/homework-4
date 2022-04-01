@@ -9,7 +9,9 @@ function Song(props)  {
         <p>{props.artistName}</p>
       </div>
       <div className='button'>
-        <button type="button" className='btn'>Add Playlist</button>
+        <button type="button" className='btn' onClick={() => props.onClick (props.isSelected)}>
+          {props.nameOfButton}
+          </button>
         </div>
       </div>
     );
