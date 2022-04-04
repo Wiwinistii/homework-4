@@ -1,0 +1,9 @@
+.title {
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+.buttonSearch:hover {
+    box-shadow: 0 10px 15px 0  rgba(252, 5, 5, 0.459);
+}
