@@ -6,6 +6,9 @@ import PlaylistCard from "../../component/playlist/Card";
 import PlaylistForm from "../../component/playlist/Form";
 import SearchForm from "../../component/playlist/Search";
 import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
+import { saveToken } from "../../redux/token";
+
 
 const BASE_URL = "https://api.spotify.com/v1";
 const CLIENT_ID = "156d8ff82a664cdca18c4ff13c8809f3";
@@ -13,7 +16,7 @@ const REDIRECT_URI = "http://localhost:3000/songspotify";
 const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize";
 const SCOPE = "playlist-modify-private";
 const AUTH_URL = `${SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token&show_dialog=true`;
-const access_token = new URLSearchParams(window.location.hash).get(
+const getToken = new URLSearchParams(window.location.hash).get(
   "#access_token"
 );
 
@@ -31,6 +34,12 @@ function Spotify() {
     emptyView: true,
     playlistId: "",
   });
+  const access_token = useSelector((state) => state.token.value);
+  const dispatch = useDispatch();
+  dispatch(saveToken(getToken));
+
+  console.log("access-token = ",access_token)
+
   // const [userId, setUserId] = useState();
   let userId = "";
   let playlistId = "";
@@ -225,15 +234,6 @@ function Spotify() {
         </div>
       </div>
     );
-  }
-  
-  {
-    /* <PlaylistCard
-    url={item.track.album.images[0].url}
-    alt="Not loaded"
-    albumName={item.track.album.name}
-    artistName={item.track.artists[0].name}
-  />; */
   }
   
   export default Spotify;

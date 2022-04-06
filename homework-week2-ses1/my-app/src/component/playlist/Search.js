@@ -7,7 +7,7 @@ const SearchForm = ({ onSearch, handleChange, handlePlaylist }) => {
       <button className='buttonSearch' type="submit" value="submit">
         Search
       </button>
-
+      <p> Search for the song you want and select it before create a playlist </p>
     </form>
   );
 };
