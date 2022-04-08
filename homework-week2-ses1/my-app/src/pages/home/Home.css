@@ -10,4 +10,15 @@
   font-weight: bold;
 }
 
+button {
+  text-align: center;
+  font-size: 22px;
+  background-color: #f37933;
+  border-radius: 6px;
+  padding: 7px 12px;
+  display: inline-block;
+  margin: 8px;
+  cursor: pointer;
+  color: black;
+}
 
