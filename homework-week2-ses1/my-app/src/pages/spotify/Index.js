@@ -7,6 +7,7 @@ import PlaylistForm from "../../component/playlist/Form";
 import SearchForm from "../../component/playlist/Search";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
 import { saveToken } from "../../redux/token";
 
 
@@ -16,9 +17,7 @@ const REDIRECT_URI = "http://localhost:3000/songspotify";
 const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize";
 const SCOPE = "playlist-modify-private";
 const AUTH_URL = `${SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token&show_dialog=true`;
-const getToken = new URLSearchParams(window.location.hash).get(
-  "#access_token"
-);
+const getToken = new URLSearchParams(window.location.hash).get("#access_token");
 
 function Spotify() {
 
@@ -38,8 +37,7 @@ function Spotify() {
   const dispatch = useDispatch();
   dispatch(saveToken(getToken));
 
-  console.log("access-token = ",access_token)
-
+  // console.log("access-token = ",access_token)
   // const [userId, setUserId] = useState();
   let userId = "";
   let playlistId = "";
@@ -82,8 +80,8 @@ function Spotify() {
     newPlaylistId = check.playlistId.replace("spotify:playlist:", "");
     viewPlaylist();
     setCheck({
-      emptyView: false
-    })
+      emptyView: false,
+    });
   };
 
   const getUserId = async () => {
@@ -165,12 +163,15 @@ function Spotify() {
     }
   };
 
+  const isLoggedOut = () => {
+    localStorage.removeItem("isLoggedIn");
+    window.location = "http://localhost:3000/";
+  };
+
   return (
       <div className="container">
         <div className="link-toSpotify">
-          <a className="title" href={AUTH_URL}>
-            Click here to Login the Application
-          </a>
+        <button onClick={isLoggedOut}>Logout</button>
         </div>
         <div className="formAndView">
           <div className="create-playlist">
