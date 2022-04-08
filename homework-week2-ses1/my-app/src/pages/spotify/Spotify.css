@@ -1,3 +1,18 @@
+.title {
+  color: rgb(97, 0, 0);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100px;
+  padding: 5px 30px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid rgb(2, 2, 2);
+  border-radius: 4px;
+}
+
 .container {
   align-items: center;
   text-align: center; 
@@ -58,7 +73,7 @@
     font-size: 14px;
     background-color: #f37933;
     border-radius: 6px;
-    padding: 6px 15px;
+    padding: 5px 12 px;
     display: inline-block;
     margin: 7px;
     cursor: pointer;

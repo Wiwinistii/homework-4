@@ -3,6 +3,6 @@ import tokenReducer from "./tokenreducer";
 
 export default configureStore({
     reducer: {
-        token: tokenReducer
+        token: tokenReducer,
     }
 });

@@ -2,20 +2,18 @@
 // import Song from './component/Song';
 // import './App.css';
 // import Index from './pages/spotify/Index';
+//import Spotify from "./pages/spotify/Index";
 import { Provider } from "react-redux";
-import store from "./redux/store";
 import "./App.css";
-import Spotify from "./pages/spotify/Index";
+import store from "./redux/store";
+import AppRouter from "./AppRouter";
+
 
 function App() {
   return (
-  // <div className='App'>
-  //   <Index/>
-  //   </div>
-
   <Provider store={store}>
     <div className="App">
-      <Spotify />
+      <AppRouter/>
     </div>
   </Provider>
 

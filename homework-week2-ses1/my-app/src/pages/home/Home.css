@@ -1,4 +1,13 @@
-.data-song {
-    text-align: center;
-    flex-direction: column;
-  }
+.Home {
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
