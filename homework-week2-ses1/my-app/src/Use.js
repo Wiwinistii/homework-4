@@ -38,14 +38,6 @@ export default function useSearch() {
     event.preventDefault();
   };
 
-  // useEffect(() => {
-  //   const access_token = new URLSearchParams(window.location.hash).get(
-  //     "#access_token"
-  //   );
-  //   setSavedToken(access_token);
-  //   setIsLoggedin(true);
-  // }, []);
-
   return {
     searchResult,
     handleChange,

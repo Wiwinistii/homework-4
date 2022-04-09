@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../spotify/Spotify.css";
-import Song from "../../component/Song";
+import Song from "../../components/Song";
 import useSearch from "../../Use";
-import PlaylistCard from "../../component/playlist/Card";
-import PlaylistForm from "../../component/playlist/Form";
-import SearchForm from "../../component/playlist/Search";
+import PlaylistCard from "../../components/playlist/Card"
+import PlaylistForm from "../../components/playlist/Form";
+import SearchForm from "../../components/playlist/Search";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";

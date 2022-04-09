@@ -1,7 +1,8 @@
 import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
 import Home from "./pages/home/Index";
 import Spotify from "./pages/spotify/Index";
-  
+
+
   function AppRouter() {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     console.log(isLoggedIn);
