@@ -1,20 +1,28 @@
-import './Song.css';
+import React from "react";
+import "./Song.css";
 
 function Song(props)  {
+  const {
+    url, alt, albumName, artistName, onClick, isSelected, nameOfButton,
+  } = props;
   return (
     <div className="Song">
-      <img src={props.url} alt={props.alt}></img>
+      <img src={url} alt={alt} />
       <div className="text" >
-        <p className="album">{props.albumName}</p>
-        <p>{props.artistName}</p>
+        <p className="album">{albumName}</p>
+        <p>{artistName}</p>
       </div>
       <div className='button'>
-        <button type="button" className='btn' onClick={() => props.onClick (props.isSelected)}>
-          {props.nameOfButton}
-          </button>
-        </div>
+        <button 
+        type="button" 
+        className='btn' 
+        onClick={() => onClick (isSelected)}
+        >
+          {nameOfButton}
+        </button>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Song;

@@ -1,34 +1,35 @@
+import React from "react";
 import "../playlist/Form.css";
 
-const PlaylistForm = ({
-  onCreate,
-  handleChange,
-  handleChangeDesc,
-  handleChangeTitle,
-}) => {
+const PlaylistForm = ({ onCreate, handleChangeDesc, handleChangeTitle }) => {
   return (
     <form className="form" onSubmit={onCreate}>
       <div className="form-text">
-        <label>Title</label>
+          <label htmlFor="title">
+          Title
+          <input
+            type="text"
+            id="title"
+            name="title"
+            onChange={handleChangeTitle}
+            minLength={10}
+            required
+          />
+        </label>
         <br />
-        <input
-          type="text"
-          id="title"
-          name="title"
-          onChange={handleChangeTitle}
-          required
-        />
       </div>
       <div className="form-text">
-        <label>Description</label>
+      <label htmlFor="description">
+      Description
+      <input
+        type="text"
+        id="description"
+        name="description"
+        onChange={handleChangeDesc}
+        required
+      />
+    </label>
         <br />
-        <input
-          type="text"
-          id="description"
-          name="description"
-          onChange={handleChangeDesc}
-          required
-        />
       </div>
       <button type="submit" value="submit">
         Create playlist

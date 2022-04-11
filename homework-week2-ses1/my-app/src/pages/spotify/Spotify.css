@@ -5,9 +5,9 @@
 }
 
 input[type="text"] {
-  width: 100px;
+  width: 210px;
   padding: 5px 30px;
-  margin: 2px 0;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid rgb(2, 2, 2);
   border-radius: 4px;
