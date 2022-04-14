@@ -21,6 +21,35 @@ input[type="text"] {
   margin: 16px auto;
 }
 
+.header{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchTitle {
+  font-size: 36px;
+  color: black;
+  font-weight: 400;
+}
+
+.listOf-track {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+.searchBar {
+  flex-direction: row;
+  display: flex;
+}
+
+.emptyResult {
+  font-size: 36px;
+  color: black;
+  font-weight: 400;
+}
+
 .spotify-track {
   text-align: center;
   align-items: center;
