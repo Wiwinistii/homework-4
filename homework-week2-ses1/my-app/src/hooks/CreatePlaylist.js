@@ -150,7 +150,11 @@ export default function useCreatePlaylist() {
       localStorage.removeItem("isLoggedIn");
       window.location = "http://localhost:3000/";
     };
-  
+
+    useEffect(() => {
+      dispatch(addToken(getToken));
+    }, []);
+      
     return {
       handlePlaylist,
       handleForm,
