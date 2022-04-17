@@ -96,3 +96,55 @@ input[type="text"] {
   height: 400px;
   border-radius: 5px;
 }
+
+.searchTitle {
+  font-size: 48px;
+  color: white;
+  font-weight: 600;
+}
+
+.listOf-track {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+.searchBar {
+  flex-direction: row;
+  display: flex;
+}
+
+.emptyResult {
+  font-size: 36px;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+}
+
+.createTitle {
+  font-size: 28px;
+  color: black;
+  font-weight: 500;
+}
+
+.searchResult {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  margin-right: 25px;
+}
+
+.MuiPagination-text {
+  color: white;
+  font-size: 24px;
+  background-color: rgba(113, 113, 113, 0.2);
+  border-radius: 10px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}

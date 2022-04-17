@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "../spotify/Spotify.css";
-import Song from "../../component/Song";
-import useSearch from "../../Use";
-import PlaylistCard from "../../component/playlist/Card";
-import PlaylistForm from "../../component/playlist/Form";
-import SearchForm from "../../component/playlist/Search";
+import Song from "../../components/Song";
+import useSearch from "../../hooks/Use";
+import PlaylistForm from "../../components/playlist/Form";
+import SearchForm from "../../components/playlist/Search";
 import useCreatePlaylist from "../../CreatePlaylist";
+import Pagination from "@mui/material/Pagination";
 
 function Spotify() {
-  const { searchResult, handleChange, onSearch } = useSearch();
+  const { searchResult, handleChange, onSearch, dataSlice } = useSearch();
   const { 
     handlePlaylist, 
     handleForm, 
@@ -20,6 +20,30 @@ function Spotify() {
     check,
     isSelected,
   } = useCreatePlaylist();
+  const [pageNumber, setPageNumber] = useState(0);
+
+  const dataPerPage = 6;
+  const pageVisited = pageNumber * dataPerPage;
+  const displayData = dataSlice
+    .slice(pageVisited, pageVisited + dataPerPage)
+    .map((item) => (
+      <CardSong
+        url={item.album.images[0].url}
+        albumName={item.album.name}
+        artistName={item.artists[0].name}
+        alt="Image not loaded"
+        key={item.uri}
+        isSelected={isSelected.includes(item.uri)}
+        onClick={(isSelect) =>
+          isSelect ? handleSelected(item.uri) : handleNotSelected(item.uri)
+        }
+        nameOfButton={isSelected.includes(item.uri) ? "Deselect" : "Select"}
+      />
+    ));
+  const pageCount = Math.ceil(dataSlice.length / dataPerPage);
+  const onChangePagination = (event, value) => {
+    setPageNumber(value - 1);
+  };
 
   return (
     <div className="container">
@@ -49,26 +73,18 @@ function Spotify() {
         <p className="searchTitle">Search Result</p>
         {searchResult.length === 0 ? (
           <p className="emptyResult">No result</p>
-        ) : (
-          <div className="listOf-track">
-            {searchResult.map((item) => (
-              <CardSong
-                url={item.album.images[0].url}
-                albumName={item.album.name}
-                artistName={item.artists[0].name}
-                alt="Image not loaded"
-                key={item.uri}
-                isSelected={isSelected.includes(item.uri)}
-                onClick={(isSelect) =>
-                  isSelect
-                    ? handleSelected(item.uri)
-                    : handleNotSelected(item.uri)
-                }
-                nameOfButton={
-                  isSelected.includes(item.uri) ? "Deselect" : "Select"
-                }
-              />
-            ))}
+        ) : (          <div className="searchResult">
+        <div className="pagination">
+          <Pagination
+            color="primary"
+            variant="text"
+            count={pageCount}
+            onChange={onChangePagination}
+            showFirstButton
+            showLastButton
+          />{" "}
+        </div>
+        <div className="listOf-track">{displayData}</div>
           </div>
         )}
       </div>
