@@ -5,20 +5,15 @@
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import "./App.css";
-import Spotify from "./pages/spotify/Index";
+import SpotifyRouter from "./routes/SpotifyRouter";
 
 function App() {
   return (
-  // <div className='App'>
-  //   <Index/>
-  //   </div>
-
-  <Provider store={store}>
+    <Provider store={store}>
     <div className="App">
-      <Spotify />
+      <SpotifyRouter />
     </div>
   </Provider>
-
   );
 }
 

@@ -1,22 +1,37 @@
-import Song from "../../component/Song";
 import "./Home.css";
-import data from '../../Data.js'
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { authentication } from "../../redux/token";
+import { addToken, isLoggedIn } from "../../redux/token-slice";
 
-function Index()  {
-  return (
-    <div className="data-song"> 
-    {data.map((data, indx)=> {
-      return (
-        <Song
-        url={data.album.images[0].url}
-        albumName={data.album.name}
-        artistsName={data.album.artists[0].name}
-        alt="Image not loaded"
-    />
-    )
-  })}
-    </div>
-  );
-} 
+function Home () {
+  const BASE_URL = "https://api.spotify.com/v1";
+  const CLIENT_ID = "156d8ff82a664cdca18c4ff13c8809f3";
+  const REDIRECT_URI = "http://localhost:3000/songspotify";
+  const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize";
+  const SCOPE = "playlist-modify-private";
+  const AUTH_URL = `${SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token&show_dialog=true`;
+  // const isLogged = useSelector((state) => state.auth.isLoggedIn); 
+  // const dispatch = useDispatch();
 
-export default Index;
+  const isAuth = () => {
+    window.location = AUTH_URL;
+    localStorage.setItem("isLoggedIn", true);
+  };
+
+return (
+  <div className="Home">
+      <div className="header"></div>
+      <div className="content">
+        <p className="title">
+          Click Button to Login the Application
+        </p>
+        <button type="submit" onClick={isAuth}>
+          Login
+        </button>
+      </div>
+</div>
+);
+}
+
+export default Home;
