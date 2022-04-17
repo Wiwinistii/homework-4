@@ -22,17 +22,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273e319baafd16e84f0408af2a0",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273e319baafd16e84f0408af2a0",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02e319baafd16e84f0408af2a0",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02e319baafd16e84f0408af2a0",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851e319baafd16e84f0408af2a0",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851e319baafd16e84f0408af2a0",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -98,17 +110,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -174,17 +198,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273c6d39d0bc56e872f55e34406",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273c6d39d0bc56e872f55e34406",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02c6d39d0bc56e872f55e34406",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02c6d39d0bc56e872f55e34406",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851c6d39d0bc56e872f55e34406",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851c6d39d0bc56e872f55e34406",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -251,17 +287,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273cb4ec52c48a6b071ed2ab6bc",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273cb4ec52c48a6b071ed2ab6bc",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02cb4ec52c48a6b071ed2ab6bc",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02cb4ec52c48a6b071ed2ab6bc",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851cb4ec52c48a6b071ed2ab6bc",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851cb4ec52c48a6b071ed2ab6bc",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -328,17 +376,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b2739729d686606e6be27346da30",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b2739729d686606e6be27346da30",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e029729d686606e6be27346da30",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e029729d686606e6be27346da30",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d000048519729d686606e6be27346da30",
+=======
+          url:"https://i.scdn.co/image/ab67616d000048519729d686606e6be27346da30",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -405,17 +465,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -481,17 +553,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273789bfaea6e7da3ef84d5ddff",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273789bfaea6e7da3ef84d5ddff",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02789bfaea6e7da3ef84d5ddff",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02789bfaea6e7da3ef84d5ddff",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851789bfaea6e7da3ef84d5ddff",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851789bfaea6e7da3ef84d5ddff",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -512,7 +596,11 @@ const data = [
         name: "Angelina Jordan",
         type: "artist",
         uri: "spotify:artist:0iQDOaYEA5i9RAF0Z73iXb",
+<<<<<<< HEAD
       },
+=======
+      }
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
     ],
     disc_number: 1,
     duration_ms: 148750,
@@ -558,17 +646,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -634,17 +734,29 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 64,
         },
       ],
@@ -710,19 +822,33 @@ const data = [
       images: [
         {
           height: 640,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 640,
         },
         {
           height: 300,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+=======
+          url:"https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
           width: 300,
         },
         {
           height: 64,
+<<<<<<< HEAD
           url: "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
           width: 64,
         },
+=======
+          url:"https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          width: 64,
+        }
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
       ],
       name: "Bohemian Rhapsody (The Original Soundtrack)",
       release_date: "2018-10-19",
@@ -741,7 +867,11 @@ const data = [
         name: "Queen",
         type: "artist",
         uri: "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d",
+<<<<<<< HEAD
       },
+=======
+      }
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
     ],
     disc_number: 1,
     duration_ms: 223080,
@@ -762,7 +892,11 @@ const data = [
     track_number: 13,
     type: "track",
     uri: "spotify:track:7iAqvWLgZzXvH38lA06QZg",
+<<<<<<< HEAD
   },
+=======
+  }
+>>>>>>> 036202cb11c4a65cd9053764b509f0dbf19ee304
 ];
 
 export default data;

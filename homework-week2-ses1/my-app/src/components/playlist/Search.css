@@ -1,0 +1,22 @@
+.buttonSearch {
+    text-align: center;
+    font-size: 16px;
+    background-color: #f37933;
+    border-radius: 6px;
+    padding: 10px 17 px;
+    display: inline-block;
+    margin: 7px;
+    cursor: pointer;
+    color: black;
+  }
+
+.buttonSearch:hover {
+    box-shadow: 0 5px 7px 0  rgba(248, 108, 15, 0.747);
+}
+
+p {
+  color : black;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}

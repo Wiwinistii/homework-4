@@ -1,4 +1,24 @@
-.data-song {
-    text-align: center;
-    flex-direction: column;
-  }
+.Home {
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  text-align: center;
+  font-size: 16px;
+  background-color: #f37933;
+  border-radius: 6px;
+  padding: 7px 12px;
+  display: inline-block;
+  margin: 7px;
+  cursor: pointer;
+  color:black;
+}
+
