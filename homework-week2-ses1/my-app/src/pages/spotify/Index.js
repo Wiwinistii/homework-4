@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../spotify/Spotify.css";
 import Song from "../../components/Song";
 import useSearch from "../../hooks/Use";
 import PlaylistForm from "../../components/playlist/Form";
 import SearchForm from "../../components/playlist/Search";
-import useCreatePlaylist from "../../CreatePlaylist";
+import useCreatePlaylist from "../../hooks/CreatePlaylist";
 import Pagination from "@mui/material/Pagination";
+import { useDispatch } from "react-redux";
+import { addToken } from "../../redux/auth-slice";
 
 function Spotify() {
   const { searchResult, handleChange, onSearch, dataSlice } = useSearch();
@@ -15,9 +17,6 @@ function Spotify() {
     handleNotSelected, 
     handleSelected,
     isLoggedOut,
-    handleView,
-    newPlaylist,
-    check,
     isSelected,
   } = useCreatePlaylist();
   const [pageNumber, setPageNumber] = useState(0);
@@ -45,6 +44,16 @@ function Spotify() {
     setPageNumber(value - 1);
   };
 
+  const getToken = new URLSearchParams(window.location.hash).get(
+    "#access_token"
+  );
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(addToken(getToken));
+  }, []);
+
   return (
     <div className="container">
       <div className="header">
@@ -63,11 +72,6 @@ function Spotify() {
             handleChangeDesc={handleForm}
           />
         </div>
-        {/* <div className="viewPlaylist">
-          <button type="submit" onClick={handleView}>
-            View Playlist
-          </button>
-        </div> */}
       </div>
       <div className="spotify-track">
         <p className="searchTitle">Search Result</p>

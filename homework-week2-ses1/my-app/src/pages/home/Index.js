@@ -1,8 +1,7 @@
 import "./Home.css";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { authentication } from "../../redux/token";
-import { addToken, isLoggedIn } from "../../redux/token-slice";
+import { addToken } from "../../redux/auth-slice"
 
 function Home () {
   const BASE_URL = "https://api.spotify.com/v1";
@@ -11,8 +10,7 @@ function Home () {
   const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize";
   const SCOPE = "playlist-modify-private";
   const AUTH_URL = `${SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token&show_dialog=true`;
-  // const isLogged = useSelector((state) => state.auth.isLoggedIn); 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const isAuth = () => {
     window.location = AUTH_URL;
