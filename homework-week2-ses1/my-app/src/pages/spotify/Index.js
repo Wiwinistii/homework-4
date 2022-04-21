@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../spotify/Spotify.css";
 import Song from "../../components/Song";
-import useSearch from "../../hooks/Use";
+import useSearch from "../../hooks/UseSearch";
 import PlaylistForm from "../../components/playlist/Form";
 import SearchForm from "../../components/playlist/Search";
 import useCreatePlaylist from "../../hooks/CreatePlaylist";

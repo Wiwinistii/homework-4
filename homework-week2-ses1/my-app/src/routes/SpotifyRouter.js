@@ -9,8 +9,6 @@ import {
   import Spotify from "../pages/spotify/Index";
   
   function SpotifyRouter() {
-  // const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
-  // console.log("islogged in router = ", isLoggedIn)
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     return (
       <Router>

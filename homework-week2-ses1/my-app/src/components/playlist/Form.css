@@ -10,3 +10,14 @@ label {
     font-weight: bold;
 }
 
+button {
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(221, 129, 24, 0.938);
+    border-radius: 6px;
+    padding: 7px 12px;
+    display: inline-block;
+    margin: 7px;
+    cursor: pointer;
+    color: black;
+  }

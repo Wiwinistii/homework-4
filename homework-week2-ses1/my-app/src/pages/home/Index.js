@@ -1,7 +1,8 @@
 import "./Home.css";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addToken } from "../../redux/auth-slice"
+import { addToken } from "../../redux/auth-slice";
+import headphonesImage from "../../assets/images/headphones.png";
 
 function Home () {
   const BASE_URL = "https://api.spotify.com/v1";
@@ -19,12 +20,16 @@ function Home () {
 
 return (
   <div className="Home">
-      <div className="header"></div>
+      <div className="centerImage">
+        <img className="headphonesImage" src={headphonesImage}/>
+      </div>
       <div className="content">
-        <p className="title">
-          Click Button to Login the Application
-        </p>
-        <button type="submit" onClick={isAuth}>
+      <div className="title-ofContent">
+          <p className="titleHome">SPOTIFY</p>
+          <p className="titleHomeChild">Choose and listen</p>
+          <p className="titleDescription">Enjoy your favorite song and have fun</p>
+        </div>
+        <button className="buttonLogin" type="submit" onClick={isAuth}>
           Login
         </button>
       </div>

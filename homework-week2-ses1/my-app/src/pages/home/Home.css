@@ -1,8 +1,53 @@
+@font-face {
+    src: url(assets/fonts/ChelaOne-Regular.ttf);
+    font-family: nos;
+}
+
+p {
+    margin: 0px 0px;
+    color: #910000;
+}
+
 .Home {
-  text-align: center;
-  align-items: center;
   flex-direction: column;
   display: flex;
+  justify-content: space-between;
+  color: black;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(235, 228, 168, 0.801), #ebad39e1 50%);
+  font-family: nos;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.content {
+  margin-top: 20vh;
+  margin-left: 2%;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.titleHome {
+  font-size: 170px;
+}
+
+.titleHomeChild {
+  font-size: 40px;
+}
+
+.titleDescription {
+  padding: 64px 0px;
+  font-size: 20px;
+}
+
+.centerImage {
+  position: absolute;
+  z-index: 2;
+}
+
+.headphonesImage {
+  width: 250px;
+  height: 250px;
 }
 
 .title {
@@ -10,15 +55,15 @@
   font-weight: bold;
 }
 
-button {
+.buttonLogin {
   text-align: center;
   font-size: 16px;
-  background-color: #f37933;
+  background-color: rgba(3, 25, 99, 0.938);
   border-radius: 6px;
   padding: 7px 12px;
   display: inline-block;
   margin: 7px;
   cursor: pointer;
-  color:black;
+  color: white;
 }
 
