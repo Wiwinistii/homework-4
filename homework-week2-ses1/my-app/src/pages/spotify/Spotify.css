@@ -148,3 +148,15 @@ input[type="text"] {
   display: flex;
   justify-content: center;
 }
+
+.songInformation {
+  display: flex;
+  flex-direction: row;
+}
+
+.newRelease {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 409px;
+}

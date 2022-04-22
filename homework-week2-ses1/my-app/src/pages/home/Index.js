@@ -1,8 +1,11 @@
 import "./Home.css";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addToken } from "../../redux/auth-slice";
+import { addToken, isLogin } from "../../redux/auth-slice";
 import headphonesImage from "../../assets/images/headphones.png";
+import { selectToken } from "../../redux/auth-slice";
+import { Route, Redirect, Link } from "react-router-dom";
+import Spotify from "../spotify/Index";
 
 function Home () {
   const BASE_URL = "https://api.spotify.com/v1";
@@ -13,10 +16,19 @@ function Home () {
   const AUTH_URL = `${SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token&show_dialog=true`;
   const dispatch = useDispatch();
 
+  const getToken = new URLSearchParams(window.location.hash).get(
+    "#access_token"
+  );
+  const accessToken = useSelector(selectToken);
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
   const isAuth = () => {
     window.location = AUTH_URL;
     localStorage.setItem("isLoggedIn", true);
   };
+
+    useEffect(() => {
+    dispatch(addToken(getToken));
+  },[]);
 
 return (
   <div className="Home">

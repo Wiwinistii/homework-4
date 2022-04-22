@@ -41,13 +41,20 @@ p {
 }
 
 .centerImage {
-  position: absolute;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  z-index: 1;
 }
 
 .headphonesImage {
-  width: 250px;
-  height: 250px;
+  position: absolute;
+  padding-top: 5%;
+  padding-left: 30%;
+  width: 45%;
+  height:90%;
 }
 
 .title {
